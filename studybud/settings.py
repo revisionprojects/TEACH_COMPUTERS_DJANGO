@@ -148,6 +148,8 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE =  'django.contrib.staticfiles.storage.StaticFilesStorage'# Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/') # 'data' is my media folder
+MEDIA_URL = '/images/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
