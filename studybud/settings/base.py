@@ -10,6 +10,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*','https://secret-sea-04616.herokuapp.com/']
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -19,7 +20,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'rest_framework',
     "corsheaders",
-    'whitenoise.runserver_nostatic',
+    
 ]
 
 AUTH_USER_MODEL = 'base.User'
