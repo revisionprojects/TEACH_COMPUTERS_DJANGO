@@ -6,7 +6,7 @@ import environ
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = True
+
 ALLOWED_HOSTS = ['*','https://secret-sea-04616.herokuapp.com/']
 
 INSTALLED_APPS = [
