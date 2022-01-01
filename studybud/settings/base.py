@@ -1,7 +1,6 @@
 
 from pathlib import Path
-import dj_database_url,os
-import environ
+import environ,os
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent

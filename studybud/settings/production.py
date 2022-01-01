@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from .base import *
 import django_heroku
+import dj_database_url,os
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 DATABASES = {
@@ -9,4 +10,4 @@ DATABASES = {
 
 # Configure Django App for Heroku.
 
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
